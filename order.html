@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Galvanize Delivers - Order</title>
+    <link rel="stylesheet" href="css/materialize.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/gdeliv.css">
+    <script type="text/javascript" src="cart.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="blue darken-3">
+        <div class="nav-wrapper">
+          <span class="brand-logo flow-text left">Galvanize Delivers</span>
+          <span class="right">Order Delivery</span>
+        </div>
+      </nav>
+
+<main>
+<div class="container">
+  <div class="row">
+      <h3 class="col l3">Menu</h3>
+      <h3 class="col l3 offset-l3">Order</h3>
+  </div>
+  <div class="row">
+      <div class="col l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/burger.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Burger</span>
+            <p>$8.99</p>
+          </div>
+          <div class="card-action pink-text">
+            <div class="pink-text white"><a href="#" id="burger"> ADD TO ORDER</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col l3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/pizza.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Pizza</span>
+            <p>$11.99</p>
+          </div>
+          <div class="card-action pink-text">
+            <a href="#" id="pizza">ADD TO ORDER</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="col l6" id="order">
+
+      <ul class="collection" id="shoppingCart">
+        <li class="collection-header">Items
+          <span class="secondary-content">price</span></li>
+
+        <li class="collection-item" id="first-item"><span class="secondary-content" id="first-item-price"></span>
+        </li>
+
+        <li class="collection-item" id="second-item"><span class="secondary-content" id="second-item-price"></span>
+        </li>
+        <li class="collection-item" id="third-item"><span class="secondary-content" id="third-item-price"></span>
+        </li>
+        <li class="collection-item" id="fourth-item"><span class="secondary-content" id="fourth-item-price"></span>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div>
+         <div class="col l3">
+           <div class="card">
+             <div class="card-image">
+               <img src="img/ribs.jpg">
+             </div>
+             <div class="card-content">
+             <span class="card-title">BBQ</span>
+             <p>$14.99</p>
+             </div>
+            <div class="card-action pink-text">
+              <a href="#"  id="ribs">ADD TO ORDER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div >
+         <div class="col l3">
+           <div class="card">
+             <div class="card-image">
+               <img src="img/ice_cream.jpg">
+             </div>
+             <div class="card-content">
+               <span class="card-title">Dessert</span>
+               <p>$7.99</p>
+             </div>
+            <div class="card-action pink-text">
+              <a href="#" id="ice_cream">ADD TO ORDER</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--
+  <div class="container">
+    <div class="row" id="order">
+        <div class="col l6 offset-l6"></div>
+        <h3>Order</h3>
+      </div>
+    </div>
+  </div>
+
+</main> -->
+
+
+
+  <footer class="page-footer blue darken-3 white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Galvanize Delivers</h5>
+          <p>Fine Dining, Delivered.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order.html">Order Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue darken-4">
+      <div class="container">
+        © 2016 Galvanize Delivers
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
