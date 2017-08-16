@@ -23,59 +23,103 @@
       </nav>
 
 <main>
-<div class="container">
-  <div class="row">
-      <h3 class="col l3">Menu</h3>
-      <h3 class="col l3 offset-l3">Order</h3>
-  </div>
-  <div class="row">
-      <div class="col l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/burger.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Burger</span>
-            <p>$8.99</p>
-          </div>
-          <div class="card-action pink-text">
-            <div class="pink-text white"><a href="#" id="burger"> ADD TO ORDER</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col l3">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/pizza.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Pizza</span>
-            <p>$11.99</p>
-          </div>
-          <div class="card-action pink-text">
-            <a href="#" id="pizza">ADD TO ORDER</a>
-          </div>
-        </div>
-      </div>
-
-    <div class="col l6" id="order">
-
-      <ul class="collection" id="shoppingCart">
-        <li class="collection-header">Items
-          <span class="secondary-content">price</span></li>
-
-        <li class="collection-item" id="first-item"><span class="secondary-content" id="first-item-price"></span>
-        </li>
-
-        <li class="collection-item" id="second-item"><span class="secondary-content" id="second-item-price"></span>
-        </li>
-        <li class="collection-item" id="third-item"><span class="secondary-content" id="third-item-price"></span>
-        </li>
-        <li class="collection-item" id="fourth-item"><span class="secondary-content" id="fourth-item-price"></span>
-        </li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="row">
+        <h3 class="col l3">Menu</h3>
+        <h3 class="col l3 offset-l3">Order</h3>
     </div>
+    <div class="row">
+        <div class="col l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/burger.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Burger</span>
+              <p>$8.99</p>
+            </div>
+            <div class="card-action pink-text">
+              <div class="pink-text white"><a href="#" id="burger"> ADD TO ORDER</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col l3">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/pizza.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title">Pizza</span>
+              <p>$11.99</p>
+            </div>
+            <div class="card-action pink-text">
+              <a href="#" id="pizza">ADD TO ORDER</a>
+            </div>
+          </div>
+        </div>
+
+      <table class="col l6 striped" id="order">
+      <thead>
+        <tr>
+            <th>Item</th>
+            <th></th>
+            <th class="right">Item Price</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td id="first-item">item</td>
+          <td></td>
+          <td class="right" id="first-item-price">$13.99</td>
+        </tr>
+        <tr>
+          <td id="second-item">item</td>
+          <td></td>
+          <td class="right" id="second-item-price">$7.99</td>
+        </tr>
+        <tr>
+          <td id="third-item"></td>
+          <td></td>
+          <td class="right" id="third-item-price"></td>
+        </tr>
+        <tr>
+          <td id="fourth-item"></td>
+          <td></td>
+          <td class="right" id="fourth-item-price"></td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="col l3 offset-l3" id="totals">
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Subtotal</td>
+          <td id="subtotal"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Tax</td>
+          <td id="tax"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Total</td>
+          <td id="total"></td>
+        </tr>
+      </tbody>
+    </table>
+
+      </div>
+    </table>
+
+      <!-- <div class="col l6" id="order">
+        <ul class="collection" id="shoppingCart">
+          <li class='collection-header'> Item <div class="secondary-content">Price</div></li>
+
+        </ul>
+      </div> -->
+
 
 
     <div class="row">
@@ -94,8 +138,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div >
+
+      <div>
          <div class="col l3">
            <div class="card">
              <div class="card-image">
