@@ -9,7 +9,16 @@ var menu = {
 //let cart = document.getElementById("shoppingCart") //this is the UL we add li to
 let cartTotal= 0.0
 let taxVal = 0
-let totalVal = cartTotal + taxVal
+let totalVal = 0
+let sub = document.getElementById('subtotal')
+let subtext = document.createTextNode('')//)
+sub.appendChild(subtext);
+let taxText = document.createTextNode('')//taxVal)
+let tax= document.getElementById('tax')
+tax.appendChild(taxText)
+let total = document.getElementById('total')
+let totalText = document.createTextNode('')//totalVal)
+total.appendChild(totalText)
 
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
@@ -36,18 +45,11 @@ function putInCart(event){
 function updateTotals(inputPrice) {
 
   cartTotal += inputPrice
-  let sub = document.getElementById('subtotal')
-  let subtext = document.createTextNode(cartTotal)
-  sub.appendChild(subtext);
-  let taxVal = (inputPrice*.029).toFixed(2)
-  let tax= document.getElementById('tax')
-  let taxText = document.createTextNode(taxVal)
-  tax.appendChild(taxText)
-  let total = document.getElementById('total')
-  let totalVal = cartTotal + parseFloat(taxVal)
-  let totalText = document.createTextNode(totalVal)
-  total.appendChild(totalText)
-
+  sub.innerHTML = cartTotal
+  taxVal = (parseFloat(taxVal) + parseFloat((inputPrice*.029))).toFixed(2)
+  tax.innerHTML = taxVal
+  totalVal = (cartTotal + parseFloat(taxVal)).toFixed(2)
+  total.innerHTML = totalVal
 }
 
 // function putInCart(event){
