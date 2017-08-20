@@ -1,169 +1,186 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Galvanize Delivers - Order</title>
-    <link rel="stylesheet" href="css/materialize.css">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/gdeliv.css">
-    <script type="text/javascript" src="cart.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galvanize Delivers - Order</title>
+  <link rel="stylesheet" href="css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/gdeliv.css">
+  <script type="text/javascript" src="js/cart.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $('a').click(function(event) {
+      event.preventDefault();
+    })
+  </script>
+</head>
 
-  <body>
-    <header>
-      <nav class="blue darken-3">
-        <div class="nav-wrapper">
-          <span class="brand-logo flow-text left">Galvanize Delivers</span>
-          <span class="right">Order Delivery</span>
-        </div>
-      </nav>
+<body class="blue lighten-4">
+  <header>
+    <nav class="blue darken-3">
+      <div class="nav-wrapper">
+        <span class="brand-logo flow-text left"><a href="index.html">Galvanize Delivers</a></span>
+        <span class="right darken-4">Order Delivery</span>
+      </div>
+    </nav>
+  </header>
+    <div class="container">
 
-<main class="container">
+      <div class="row">
 
-  <div class="row">
+        <div class="col s6 m6 l6">
+          <h3> Menu</h3>
 
-    <div class="col s6">
-      <h3> Menu</h3>
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/burger.jpg" alt="burger">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Burger</span>
 
+              </div>
+              <div class="card-action">
+                <a href="#" class="purple-text darken-5" id="burger"> $8.99 >>> ORDER</a>
 
-    <div class="col s6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/burger.jpg">
+              </div>
+            </div>
           </div>
-          <div class="card-content">
-            <span class="card-title">Burger</span>
-            <p>$8.99</p>
+
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/pizza.jpg" alt="pizza">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Pizza</span>
+
+              </div>
+              <div class="card-action">
+                <a href="#" class="purple-text darken-5" id="pizza"> $11.99 >>> ORDER</a>
+              </div>
+            </div>
           </div>
-          <div class="card-action pink-text">
-            <div class="pink-text white"><a href="#" id="burger"> ADD TO ORDER</a>
+
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/ribs.jpg" alt="ribs">
+              </div>
+              <div class="card-content">
+                <span class="card-title">BBQ</span>
+              </div>
+              <div class="card-action">
+                <a href="#" class="purple-text darken-5" id="ribs"> $14.99 >>> ORDER</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/ice_cream.jpg" alt="ice cream">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Dessert</span>
+              </div>
+              <div class="card-action pink-text">
+                <a href="#" class="purple-text darken-5" id="ice_cream"> $7.99 >>> ORDER</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="col s6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/pizza.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Pizza</span>
-            <p>$11.99</p>
-          </div>
-          <div class="card-action pink-text">
-            <a href="#" id="pizza">ADD TO ORDER</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/ribs.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title">BBQ</span>
-            <p>$14.99</p>
-          </div>
-          <div class="card-action pink-text">
-            <a href="#"  id="ribs">ADD TO ORDER</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s6">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/ice_cream.jpg">
-          </div>
-          <div class="card-content">
-            <span class="card-title">Dessert</span>
-            <p>$7.99</p>
-          </div>
-          <div class="card-action pink-text">
-            <a href="#" id="ice_cream">ADD TO ORDER</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
 
-      <div class="col s6">
-
-        <h3>Order</h3>
-
-        <table class="striped" id="order">
-          <thead>
-            <tr>
+        <div class="col s6">
+          <h3>Order</h3>
+          <table class="striped blue lighten-2" id="order">
+            <thead class="border">
+              <tr>
                 <th>Item</th>
-                <!-- <th></th> -->
                 <th class="right">Item Price</th>
-            </tr>
-          </thead>
-          <tbody id="items">
-          </tbody>
-        </table>
+              </tr>
+            </thead>
+            <tbody id="items">
+            </tbody>
+          </table>
 
+          <table class="col s6 offset-s6" id="totals">
+            <tbody>
+              <tr>
+                <td></td>
+                <td>Subtotal</td>
+                <td id="subtotal"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Tax</td>
+                <td id="tax"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Total</td>
+                <td id="total"></td>
+              </tr>
+            </tbody>
+          </table>
 
-        <table class="col s6 offset-s6" id="totals">
-          <tbody>
-            <tr>
-              <td></td>
-              <td>Subtotal</td>
-              <td id="subtotal"></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Tax</td>
-              <td id="tax"></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Total</td>
-              <td id="total"></td>
-            </tr>
-          </tbody>
-        </table>
-      </div> <!--close right col-->
+          <div class="row">
 
-
-
-
-
-
-  </div>
-
-
-
-
-</main>
-
-  <footer class="page-footer blue darken-3 white-text">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5>Galvanize Delivers</h5>
-          <p>Fine Dining, Delivered.</p>
+            <form class="col s12">
+              <!--  <div class="row"> -->
+              <div class="input-field col s10">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Name</label>
+              </div>
+              <div class="input-field col s10">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telephone</label>
+              </div>
+              <div class="input-field col s10">
+                <i class="material-icons prefix">home</i>
+                <input id="icon_address" type="text" class="validate">
+                <label for="icon_address">Address</label>
+              </div>
+            </form>
+            <div class="col s6 offset-s3">
+              <div class="btn purple darken-5 white-text"><a href="order.html">PLACE AN ORDER</a></div>
+            </div>
+          </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="order.html">Order Delivery</a></li>
-          </ul>
-        </div>
+        <!--close order / right column-->
       </div>
+      <!--close row-->
     </div>
-    <div class="footer-copyright blue darken-4">
+
+    <footer class="page-footer blue darken-3 white-text">
       <div class="container">
-        © 2016 Galvanize Delivers
+        <div class="row">
+          <div class="col l6 s12">
+            <h5>Galvanize Delivers</h5>
+            <p>Fine Dining, Delivered.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="order.html">Order Delivery</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </footer>
-  </body>
+      <div class="footer-copyright blue darken-4">
+        <div class="container">
+          © 2016 Galvanize Delivers
+        </div>
+      </div>
+    </footer>
+</body>
+
 </html>

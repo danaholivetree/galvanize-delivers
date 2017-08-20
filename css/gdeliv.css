@@ -1,13 +1,23 @@
-body{
-  margin:0;
+body {
+  margin: 0;
+  font-family: 'Encode Sans', sans-serif;
 }
+
 .nav-wrapper {
   margin: 0 20px;
 }
 
-header img{
-  width:100%;
-  height:100%;
+table.striped>tbody>tr:nth-child(odd) {
+  background-color: #BBDEFB;
+}
+
+#totals {
+  background-color: #BBDEFB
+}
+
+.card .card-action {
+  margin: 0;
+  background-color: #42A5F5
 }
 
 a {
@@ -24,13 +34,13 @@ a:hover {
   color: inherit;
 }
 
-.dining {
+
+/*.dining {
   position: absolute;
   top: 35%;
   margin-left: 25%;
   text-align: center;
-}
-
+}*/
 
 #marketing {
   margin-left: 12%;
